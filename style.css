@@ -1,0 +1,126 @@
+body{
+    background-color: rgb(247, 238, 223);
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    justify-content: center;
+    color: #402218;
+}
+
+.banner {
+    background-image: linear-gradient(-220deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.2) 50%), url(image/fall.gif);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 150px 0;
+    height: 150px;
+  }
+  
+  .banner h1 {
+    text-align: center;
+    font-size: 54px;
+    margin-left: 20px;
+  }
+  
+  .banner p {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+  }
+
+.btn-green { 
+      text-align: center;
+      margin-left: 20px;
+      border: solid 1px black;
+      background-color: #402218;
+      color: tan;
+      padding: 5px;
+      width: auto;
+      border-radius: 4px;
+      text-decoration: none;
+  }
+.btn-green:hover {
+      color: beige;
+      background: burlywood;
+      border: solid 1px tan;
+      transition: 0.1s;
+  }
+.row {
+      display:flex;
+      flex-direction: row;
+}
+.col-sm {
+  display: flex;
+  flex-direction: column;
+  padding: 2px 14px;
+  flex: 1;
+}
+
+  .card-trip {
+    margin-inline: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    flex: 1;
+    margin-top: 4px;
+    width: 50%;
+    border-radius: 4px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    margin-bottom: 24px;
+    
+  }
+  
+  .card-trip > img {
+    margin-top: 30px;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .card-trip h2 {
+    padding: 20px 0 0;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    width: 350px;
+  }
+  
+.card-trip p {
+    font-size: 12px;
+    opacity: 0.7;
+    width: 75%;
+  }
+  
+.card-trip .card-trip-infos {
+    width: 75%;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+  }
+.card-trip .container {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    flex-direction: column;
+    padding: 2px 14px;
+}
+/*media queries*/
+
+@media(max-width: 900px) {
+  .card-trip{
+      width: 700px;
+  }
+}
+@media(max-width: 700px){
+  .card-trip {
+      width: 500px;
+  }
+}
